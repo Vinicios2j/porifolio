@@ -1,0 +1,368 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    padding-top: 70px; /* Evita que o conteúdo fique escondido atrás do header */
+}
+
+header {
+    width: 100vw;
+    height: 70px;
+    background-color: #07172b;
+    
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    border-bottom: 3px solid #0667fa;
+
+    position: fixed; /* Fixa o header no topo */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+header > nav {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+header > nav > a {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13pt;
+    color: #0667fa;
+}
+
+header > nav > a:hover {
+    color: white;
+    transition: 800ms;
+}
+
+#resume {
+    margin-right: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    border: 3px solid #0667fa;
+    color: #0667fa;
+    background: none;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 12pt;
+    cursor: pointer;
+    transition: 800ms;
+}
+
+#resume:hover {
+    border: 3px solid white;
+    color: white;
+    transition: 800ms;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #07172b;
+}
+
+main > section.home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+main > section.home > h1 {
+    color: white;
+}
+
+main > section.home > h2 {
+    color: rgb(145, 145, 145);
+}
+
+main > section.home > p {
+    color: rgb(250, 250, 250);
+    max-width: 1000px;
+    margin: 10px;
+}
+
+#work {
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    border: 2px solid #0667fa;
+    color: #0667fa;
+    background-color: #0A192F;
+    font-family: monospace;
+    font-size: 24pt;
+    font-weight: bolder;
+    margin-top: 80px;
+    transition: 999ms;
+    cursor: pointer;
+}
+
+#work:hover {
+    border: 3px solid white;
+    color: white;
+    transition: 999ms;
+}
+
+#logo {
+    color: white;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 19pt;
+    border: 3px solid white;
+    border-radius: 10%;
+    padding: 10px;
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+}
+
+#logo:hover {
+    border: 2px solid #0667fa;
+    border-radius: 20%;
+    transition: 999ms;
+}
+
+#experiencia {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15pt;
+
+    background-color: #0A192F;
+    color: white;
+}
+
+#experiencia > section {
+    text-align: center;
+}
+
+#experiencia > section > h1 {
+    font-size: 29pt;
+    border-bottom: 3px solid white;
+    margin: 10px;
+}
+
+#experiencia > section > p {
+    max-width: 700px;
+}
+
+#tecs {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#tecs > div > img {
+    margin: 10px;
+}
+
+#projetos {
+    text-align: center;
+    background-color: #07172b;
+    color: white;
+    padding: 50px 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#projetos h1 {
+    font-size: 2em;
+    border-bottom: 3px solid white;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.projetos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.projeto {
+    background: #07172b;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.projeto:hover {
+    transform: scale(1.05);
+}
+
+.projeto img {
+    max-width: 100%;
+    border-radius: 5px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #0667fa;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: white;
+    color: #0667fa;
+}
+
+#sobre > p {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#sobre > p > a {
+    color: white;
+}
+
+#sobre > p > img {
+    margin-right: 5px;
+}
+
+
+#tecs img {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+#tecs img.show-icon {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#sobreCurso {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #0A192F;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#curso {
+    background: linear-gradient(135deg, #112240, #07172b);
+    color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: monospace;
+}
+
+#curso h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #64ffda;
+}
+
+.faculdade, .cursosFeitos {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.faculdade h2, .cursosFeitos h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-left: 4px solid #64ffda;
+    padding-left: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#faculdadeNome, #faculdadeCurso {
+    font-weight: bold;
+    color: #64ffda;
+}
+
+#listaCursos {
+    list-style: none;
+    padding: 0;
+}
+
+#listaCursos li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+#listaCursos li:hover {
+    background: #64ffda;
+    color: #0a192f;
+}
+
+
+.hidden {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 0.5s, transform 0.5s;
+  }  
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}

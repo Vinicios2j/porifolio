@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de José Vinicios</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <p id="logo">J</p>
+        <nav>
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#curso">Cursos</a>
+            <button id="resume">Resume</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home hidden" id="sobre">
+            <h1>José Vinicios.</h1>
+            <h2>Desenvolvedor em Experiência, 2 Anos</h2>
+            <p>Meu nome é José Vinicios, tenho 20 anos e sou um desenvolvedor apaixonado por tecnologia e inovação. Comecei minha jornada na programação aos 18 anos, mas foi recentemente que decidi me dedicar intensamente a essa área, buscando aprimorar minhas habilidades e criar soluções impactantes.</p>
+            <br>
+            <p><img src="images/what.png" width="50px"> <a href="https://wa.me/5521995294926" target="_blank" rel="external"><span>(21) 99529-4926</span></a></p>
+            <p><img src="images/gitHub.png" width="50px"> <a href="https://github.com/Vinicios2j" target="_blank" rel="external"><span>José Vinicios</span></a></p>
+            <p><img src="images/linkedin.png" width="40px"> <a href="https://www.linkedin.com/in/jose-vin%C3%ADcios-batista-dos-santos-bb11a0209/" target="_blank" rel="external"><span>José Vinicios</span></a></p>
+
+        </section>
+
+        <section id="experiencia">
+            <section class="hidden">
+                <h1>Minha Trajetória</h1>
+                <p>
+                    Desde que comecei a programar, tive a oportunidade de desenvolver projetos para empresas, colocando em prática meus conhecimentos e adquirindo experiência real no mercado. Um dos projetos mais marcantes que desenvolvi foi o MRO, uma ferramenta que auxilia no crescimento de seguidores no Instagram. Para complementar essa solução, também desenvolvi um dashboard interativo, utilizando Node.js, HTML, JavaScript e CSS, permitindo aos usuários monitorarem seu progresso e gerenciarem suas estratégias de crescimento de forma eficiente.
+                </p>
+            </section>
+
+            <div id="tecs">
+                <div>
+                    <img src="images/logo node.png" alt="logo node JS" width="50px">
+                    <img src="images/javascript-js.512x512.png" alt="logo JavaScript" width="50px">
+                    <img src="images/html5.505x512.png" alt="logo HTML" width="50px">
+                    <img src="images/css3.504x512.png" alt="logo CSS" width="50px">
+                </div>
+
+                <div>
+                    <img src="images/git.512x214.png" alt="logo git" width="100px">
+                    <img src="images/github-original-wordmark.512x508.png" alt="logo gitHub" width="50px">
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projetos">
+            <section class="hidden">
+                <h1>Meus Projetos</h1>
+                <div class="projetos-container">
+                    <div class="projeto">
+                        <img src="images/mro-instagram.png" alt="Projeto MRO">
+                        <h2>MRO - Crescimento no Instagram</h2>
+                        <p>Uma ferramenta que auxilia no crescimento de seguidores no Instagram, com um dashboard interativo.</p>
+                        <a href="https://exemplo.com/mro" target="_blank" class="btn">Ver Projeto</a>
+                    </div>
+                    
+                    <div class="projeto">
+                        <img src="images/mro-dashboard.png" alt="Dashboard MRO">
+                        <h2>Dashboard MRO</h2>
+                        <p>Dashboard desenvolvido com Node.js, HTML, CSS e JavaScript para monitoramento e controle do MRO.</p>
+                        <a href="https://exemplo.com/dashboard" target="_blank" class="btn">Ver Projeto</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="sobreCurso">
+            <section class="hidden">
+                <section id="curso">
+                    <h1>Meus Cursos</h1>
+                
+                    <div class="faculdade">
+                        <h2>Faculdade Atual</h2>
+                        <p>Nome da Faculdade: <span id="faculdadeNome">Faculdade Estácio de Sá</span></p>
+                        <p>Cursando: <span id="faculdadeCurso">Análise e Desenvolvimento de Sistemas - Estácio</span></p>
+                    </div>
+                
+                    <div class="cursosFeitos">
+                        <h2>Cursos Concluídos</h2>
+                        <p style="color: aqua;">Curso Em Video</p>
+                        <ul id="listaCursos">
+                            <li>HTML 5: 120 Horas</li>
+                            <li>CSS3 3: 120 Horas</li>
+                            <li>JavaScript: 40 Horas</li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+
+        </section>
+    </main>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>
